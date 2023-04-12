@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 8</title>
+    <style>
+      body {
+        background-color: rgb(206, 246, 201);
+      }
+      .header {
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(166, 166, 253);
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: aquamarine;
+        text-align: justify;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+    <!-- script rating -->
+     <script>
+      function updateRating(value) {
+        document.getElementById("ratingValue").innerHTML = value;
+      }
+      </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Cyber Security Fundamentals</h1>
+    </div>
+    <div class="container">
+      <h2>Pendaftaran Peserta</h2>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <label for="username">Username</label>
+              <input type="hidden" name="username" value="123">
+            </td>
+            <td>:<input type="text" id="username" name="username"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>:<input type="password" id="password" name="password"></td>
+          </tr>
+          <tr>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td>:<input type="text" id="nama" name="nama"></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email Aktif</label></td>
+            <td>:<input type="email" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="username">Minat</label></td>
+            <td>
+                <label><input type="checkbox" id="minat" name="keamananweb">Keamanan Web</label>
+                <label><input type="checkbox" id="minat" name="keamananapps">Keamanan Aplikasi</label>
+                <label><input type="checkbox" id="minat" name="keamanandata">Keamanan Data</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="jml_minat_course">Jumlah Minat Course</label></td>
+            <td>:<input type="number" min="1" max="3"></td>
+          </tr>
+          <tr>
+            <td><label for="nomor_hp">Nomor HP</label></td>
+            <td>:<input type="tel" id="nomor_hp" name="nomor_hp" placeholder="0899-9999-9999"></td>
+          </tr>
+          <tr>
+            <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+            <td>:
+              <input
+                type="radio"
+                id="laki-laki"
+                name="jenis_kelamin"
+                value="Laki-laki"
+              />
+              <label for="laki-laki">Laki-laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenis_kelamin"
+                value="Perempuan"
+              />
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+            <td>:<input type="date" id="tgl_lahir" name="tgl_lahir" /></td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td>:<textarea id="alamat" name="alamat"></textarea></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pendidikan_terakhir">Pendidikan Terakhir</label>
+            </td>
+            <td>:
+              <select id="pendidikan_terakhir" name="pendidikan_terakhir">
+                <option value="SMA/SMK">SMA/SMK</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Sarjana">Sarjana</option>
+                <option value="Magister">Magister</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ijazah">Ijazah</label></td>
+            <td>:<input type="file" id="ijazah" name="ijazah" /></td>
+          </tr>
+          <tr>
+            <td><label for="kursus">Kursus</label></td>
+            <td>
+              :
+              <select id="kursus" name="kursus">
+                <option value="Cyber Security Fundamentals">
+                  Cyber Security Fundamentals
+                </option>
+                <option value="Cyber Security Intermediate">
+                  Cyber Security Intermediate
+                </option>
+                <option value="Cyber Security Advanced">
+                  Cyber Security Advanced
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="waktu_latihan">Pilih Waktu Kursus</label></td>
+            <td>:<input type="time" id="waktu_latihan" name="waktu_latihan"></td>
+          </tr>
+          <tr>
+            <td><label for="waktu_latihan">Pilih Waktu Lokal:</label></td>
+            <td>:<input type="datetime-local" id="waktu_latihan" name="waktu_latihan"></td>
+          </tr>
+          <tr>
+            <td><label for="bulan_mulai">Bulan Mulai</label></td>
+            <td>:<input type="month" id="bulan_mulai" name="bulan_mulai"></td>
+          </tr>
+          <tr>
+            <td><label for="minggu_start">Minggu mulai</label></td>
+            <td>:<input type="week" id="minggu_start" name="minggu_start"></td>
+          </tr>
+          <tr>
+            <td><label for="linkedin"> Link Linkedinmu</label></td>
+            <td>:<input type="url" id="linkedin" name="linkedin"></td>
+          </tr>
+          <tr>
+            <td><label for="warna">Pilih warna</label></td>
+            <td>:<input type="color" id="warna" name="warna" value="#ffffff"></td>
+          </tr>
+          <tr>
+            <td><label for="rating">Rating Website ini</label></td>
+            <td>:
+              <input type="range" id="rating" name="rating" min="1" max="10" step="1" onchange="updateRating(this.value);">
+              <span id="ratingValue">6</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Daftar"></td>
+            <td><input type="reset" value="Reset"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+  <footer style="text-align: center; background-color: rgb(186, 120, 249)">
+    <h3>Created By Sep Sarip Hidayattuloh</h3>
+  </footer>
+</html>

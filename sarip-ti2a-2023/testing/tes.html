@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <form action="proses.php" method="post">
+        <input type="hidden" name="user_id" value="123">
+        <input type="text" name="nama" placeholder="Nama Lengkap">
+        <input type="submit" value="Submit">
+        <label for="rating">Rating:</label>
+<input type="range" id="rating" name="rating" min="1" max="10" step="1" onchange="updateRating(this.value);">
+<span id="ratingValue">5</span>
+
+<script>
+function updateRating(value) {
+  document.getElementById("ratingValue").innerHTML = value;
+}
+const backgroundColorInput = document.getElementById('background-color');
+    backgroundColorInput.addEventListener('input', function() {
+        document.body.style.backgroundColor = backgroundColorInput.value;
+    });
+</script>
+
+<label>Pilih Warna Latar Belakang: </label>
+<input type="color" id="background-color">
+
+<label for="search">Search:</label>
+<input type="search" id="search" name="search"
+
+
+      </form>
+      
+</body>
+</html>

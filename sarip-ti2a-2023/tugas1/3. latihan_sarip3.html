@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+
+    <style>
+        .nomor {
+            width: 3%;
+        }
+
+        table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        }   
+
+        table{
+            width: 100%;
+        }
+        body{
+            background-color: #ABEDF5;
+            text-align: center;
+        }
+
+        .gambar {
+            width: 25%;
+        }
+
+        .nama {
+            width: 8%;
+        }
+    </style>
+    
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script> 
+
+</head>
+<body>
+    <h1 style="text-align: center;">Latihan Tabel di HTML</h1>
+    <table>
+        <tr>
+            <th colspan="5">Profile Proplayer</th>
+        </tr>
+        <tr>
+            <th class="nomor">No.</th>
+            <th>Gambar</th>
+            <th class="nama">Nama</th>
+            <th>keterangan</th> 
+            <th>Catatan tambahan</th>
+        </tr>
+        <tr>
+            <td class="nomor">1</td>
+            <td class="gambar"> <img src="https://assets.skor.id/crop/0x0:0x0/x/photo/2021/01/22/1904117349.jpeg" alt="foto lemon" width="200px" height="auto"></td>
+            <td class="nama"><p>LEMON</p></td>
+            <td width="40%">
+                <p>
+                    RRQ Lemon merupakan nama panggung dari pemuda bernama asli Muhammad Ikhsan ini.
+                    Dia lahir di Banda Aceh pada 30 Desember 1998 sehingga saat ini masih berusia 25 tahun.
+                    Agama RRQ Lemon diyakini adalah Islam 
+                </p>
+            </td>
+            <td rowspan="2">Pemain Aktif Season 11</td>
+        </tr>
+        <tr>
+            <td class="nomor">2</td>
+            <td class="gambar"> <img src="https://media-assets-ggwp.s3.ap-southeast-1.amazonaws.com/2022/04/ae-pai-biodata-featured-640x360.jpg" alt="pai" width="200px" height="auto"></td>
+            <td class="nama">PAI</td>
+            <td>
+                <p>
+                    AE Pai merupakan nama panggung dari pemuda bernama asli Rafly Alvareza Sudrajat.
+                    Dia lahir di Banda Aceh pada 26 Maret 1999 sehingga saat ini masih berusia 24 tahun.
+                    Agama AE Pai diyakini adalah Islam
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
